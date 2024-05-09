@@ -14,7 +14,6 @@
 4. Download and install Eclipse IDE for JAVA Web Developers
 5. Set the environment variables in the OS
 
-
 	1. WINDOWS -> Set the following SYSTEM environment variables for JAVA, Maven & NODE	
 		JAVA_HOME -> 	C:\Program Files\Java\jdk-11.0.13
 		NODE_HOME -> 	C:\Program Files\nodejs
