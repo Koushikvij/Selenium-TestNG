@@ -49,8 +49,8 @@
 ### HOW TO EXECUTE:
 1. Extract the Zip
 2. Use Eclipse IDE to import the project
-3. Right click on the pom.xml and click on Maven -> Update Project
-4. To execute, Right click on the pom.xml and click on Run -> Maven Test
+3. Go to TestNG folder in "sr/test/resources" and open the XML file
+4. Run the file as TestNG Test
 
 ### WHERE TO FIND:
 * TestNG files are found in "src/test/resources/TestNG" folder
