@@ -89,7 +89,7 @@ public class BaseTest
             case "safari":
 
                 SafariOptions options = new SafariOptions();
-                // options.setUseTechnologyPreview(true);
+                options.setUseTechnologyPreview(true);
 
                 returnDriver = new SafariDriver(options);
                 setImplicitWait(returnDriver);
@@ -163,7 +163,6 @@ public class BaseTest
                 chromePrefs.put("profile.default_content_settings.popups", 0);
                 chromePrefs.put("download.default_directory", downloadFilepath);
                 chromeOptions.setExperimentalOption("prefs", chromePrefs);
-                chromeOptions.addArguments("--disable-features=DownloadBubble,DownloadBubbleV2");
 
                 if(mode.equalsIgnoreCase("headless"))
                 {
@@ -178,7 +177,7 @@ public class BaseTest
                 }
                 else
                 {
-//                    chromeOptions.addArguments("incognito");
+                    chromeOptions.addArguments("incognito");
                     chromeOptions.addArguments("disable-features=DownloadBubble,DownloadBubbleV2");
                     chromeOptions.addArguments("--disable-notifications");
                     chromeOptions.addArguments("--ignore-certificate-errors");

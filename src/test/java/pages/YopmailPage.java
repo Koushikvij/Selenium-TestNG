@@ -131,7 +131,7 @@ public class YopmailPage {
 						"The Mail page is not contains the Password Reset Link", true);
 			}
 		} catch (Exception e) {
-			ExtentTestManager.createAssertTestStepWithScreenshot("VerificationofResetLinkAvailableinMail", Status.WARNING,
+			ExtentTestManager.createAssertTestStepWithScreenshot("VerificationofResetLinkAvailableinMail", Status.FAIL,
 					"Exception found in Method - VerificationofResetLinkAvailableinMail", true, e);
 		}
 	}
@@ -161,7 +161,7 @@ public class YopmailPage {
 			DynamicWait.smallWait();
 			BaseTest.getDriver().switchTo().frame("ifmail");
 			if (receivedmailLink.isDisplayed()) {
-				Utilities.Click(BaseTest.getDriver(), receivedmailLink);
+
 				ExtentTestManager.createAssertTestStepWithScreenshot("Body of the Mail", Status.INFO,
 						"The Mail page laucnhed -> Entered into the Inbox -> Password reset mail received -> reset mail link also Available",
 						true);

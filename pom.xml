@@ -162,23 +162,22 @@
 				<version>${maven-surefire-plugin-version}</version>
 				<configuration>
 					<encoding>UTF-8</encoding>
-<!--					<suiteXmlFiles>-->
-<!--						<suiteXmlFile>${TestScenario}</suiteXmlFile>-->
-<!--					</suiteXmlFiles>-->
+					<suiteXmlFiles>
+						<suiteXmlFile>${TestScenario}</suiteXmlFile>
+					</suiteXmlFiles>
 					<testFailureIgnore>true</testFailureIgnore>
 					<forkCount>3</forkCount>
 					<reuseForks>true</reuseForks>
-<!--					<systemPropertyVariables>-->
-<!--						<mode>${Mode}</mode>-->
-<!--						<browser>${Browser}</browser>-->
-<!--						<testos>${OS}</testos>-->
-<!--						<environment>${Environment}</environment>-->
-<!--						<jenkinsbuildnum>${Build}</jenkinsbuildnum>-->
-<!--						<jenkinsjobname>${JobName}</jenkinsjobname>-->
-<!--					</systemPropertyVariables>-->
+					<systemPropertyVariables>
+						<mode>${Mode}</mode>
+						<browser>${Browser}</browser>
+						<testos>${OS}</testos>
+						<environment>${Environment}</environment>
+						<jenkinsbuildnum>${Build}</jenkinsbuildnum>
+						<jenkinsjobname>${JobName}</jenkinsjobname>
+					</systemPropertyVariables>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
-	
 </project>

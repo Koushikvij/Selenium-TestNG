@@ -122,9 +122,6 @@ public class ConfigProperties
             case "divinity":
                 keyValue = keyValue + "divinity_";
                 break;
-            case "hklaw":
-            	keyValue = keyValue + "hklaw_";
-            	break;
         }
         switch(type.toLowerCase().trim())
         {
